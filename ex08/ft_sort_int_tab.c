@@ -1,36 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
+/*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isaridas <isaridas@student.42istanbul.com  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/25 22:57:28 by isaridas          #+#    #+#             */
-/*   Updated: 2022/07/26 18:18:31 by isaridas         ###   ########.fr       */
+/*   Created: 2022/07/25 23:38:08 by isaridas          #+#    #+#             */
+/*   Updated: 2022/07/26 18:20:57 by isaridas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
 
-void	ft_rev_int_tab(int *tab, int size)
+void	swap( int *element1, int *element2)
 {
-	int hold;
-	int element;
-	int rep;
+	int	hold;
 
-	element = 0;
-	rep = 1;
-	while (rep < size) 
+	hold = *element1;
+	*element1 = *element2;
+	*element2 = hold;
+}
+
+void	ft_sort_int_tab(int *tab, int size)
+{
+	int	count_i;
+	int	count_o;
+
+	count_i = 0;
+	count_o = 0;
+	while (count_o < size - 1)
 	{
-		while (element < size - rep)
+		while (count_i < size - 1)
 		{
-			hold = tab[element];
-			tab[element] = tab[element + 1];
-			tab[element + 1] = hold;
-			element++;
+			if (tab[count_i] > tab[count_i + 1])
+			{
+				swap(&tab[count_i], &tab[count_i + 1]);
+			}
+			count_i++;
 		}
-		element = 0;
-		rep++;
+		count_o++;
 	}
 }

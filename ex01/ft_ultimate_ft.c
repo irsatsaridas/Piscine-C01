@@ -1,36 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
+/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isaridas <isaridas@student.42istanbul.com  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/25 22:57:28 by isaridas          #+#    #+#             */
-/*   Updated: 2022/07/26 18:18:31 by isaridas         ###   ########.fr       */
+/*   Created: 2022/07/25 16:04:47 by isaridas          #+#    #+#             */
+/*   Updated: 2022/07/26 00:08:18 by isaridas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include <stdio.h>
 
-void	ft_rev_int_tab(int *tab, int size)
+void	ft_ultimate_ft(int *********nbr)
 {
-	int hold;
-	int element;
-	int rep;
-
-	element = 0;
-	rep = 1;
-	while (rep < size) 
-	{
-		while (element < size - rep)
-		{
-			hold = tab[element];
-			tab[element] = tab[element + 1];
-			tab[element + 1] = hold;
-			element++;
-		}
-		element = 0;
-		rep++;
-	}
+	*********nbr = 42;
 }
