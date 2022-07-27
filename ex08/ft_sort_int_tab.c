@@ -6,7 +6,7 @@
 /*   By: isaridas <isaridas@student.42istanbul.com  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 23:38:08 by isaridas          #+#    #+#             */
-/*   Updated: 2022/07/26 18:20:57 by isaridas         ###   ########.fr       */
+/*   Updated: 2022/07/27 16:14:52 by isaridas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ void	ft_sort_int_tab(int *tab, int size)
 			}
 			count_i++;
 		}
+		count_i = 0;
 		count_o++;
 	}
 }
