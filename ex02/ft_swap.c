@@ -6,7 +6,7 @@
 /*   By: isaridas <isaridas@student.42istanbul.com  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 21:25:52 by isaridas          #+#    #+#             */
-/*   Updated: 2022/07/25 21:26:03 by isaridas         ###   ########.fr       */
+/*   Updated: 2022/07/27 13:14:57 by isaridas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_swap(int *a, int *b)
 {
-	int hold;
+	int	hold;
 
 	hold = *a;
 	*a = *b;

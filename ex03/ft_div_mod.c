@@ -6,7 +6,7 @@
 /*   By: isaridas <isaridas@student.42istanbul.com  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 21:26:41 by isaridas          #+#    #+#             */
-/*   Updated: 2022/07/25 21:28:48 by isaridas         ###   ########.fr       */
+/*   Updated: 2022/07/27 13:44:18 by isaridas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-	*div = a / b;
-	*mod = a % b;
+	if (b != 0)
+	{
+		*div = a / b;
+		*mod = a % b;
+	}
 }

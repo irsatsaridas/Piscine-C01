@@ -6,7 +6,7 @@
 /*   By: isaridas <isaridas@student.42istanbul.com  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 22:57:28 by isaridas          #+#    #+#             */
-/*   Updated: 2022/07/26 18:18:31 by isaridas         ###   ########.fr       */
+/*   Updated: 2022/07/27 13:24:48 by isaridas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 
 void	ft_rev_int_tab(int *tab, int size)
 {
-	int hold;
-	int element;
-	int rep;
+	int	hold;
+	int	element;
+	int	rep;
 
 	element = 0;
 	rep = 1;
-	while (rep < size) 
+	while (rep < size)
 	{
 		while (element < size - rep)
 		{
